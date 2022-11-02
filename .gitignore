@@ -90,3 +90,6 @@ iOSInjectionProject/
 CryptoTracker/CryptoTracker/Resources/Key.plist
 SpotifyGo/Resources/APIKey.swift
 DemoCA/Pods
+DemoCA/xcuserdata
+.DS_Store
+DemoCA/.DS_Store
