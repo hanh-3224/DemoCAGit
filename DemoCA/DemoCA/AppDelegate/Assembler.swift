@@ -8,6 +8,7 @@
 import UIKit
 
 protocol Assembler: AnyObject,
+                        GatewayAssembler,
                         AppAssembler,
                         SearchAssembler {
     

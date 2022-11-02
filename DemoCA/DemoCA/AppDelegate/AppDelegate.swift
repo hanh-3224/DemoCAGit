@@ -31,4 +31,3 @@ extension AppDelegate {
         _ = vm.transform(input: input, disposeBag: disposeBag)
     }
 }
-

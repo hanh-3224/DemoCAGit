@@ -9,4 +9,6 @@ target 'DemoCA' do
 	pod 'RxSwift'
 	pod 'RxCocoa'
 	pod 'Alamofire'
+  pod 'Then'
+  pod 'Reusable'
 end

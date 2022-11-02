@@ -6,8 +6,15 @@
 //
 
 import UIKit
+import Reusable
+import RxSwift
 
-class TableViewCell: UITableViewCell {
+class TableViewCell: UITableViewCell, NibReusable {
+
+    @IBOutlet private weak var searchLable: UILabel!
+
+    private let disposeBag = DisposeBag()
+    var viewModel: SearchCellViewModel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -15,5 +22,9 @@ class TableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+    }
+    
+    func setDataCell() {
+        searchLable.text = viewModel.searchText
     }
 }

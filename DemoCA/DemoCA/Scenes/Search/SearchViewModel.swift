@@ -7,6 +7,7 @@
 
 import Foundation
 import RxSwift
+import RxCocoa
 
 struct SearchViewModel {
     let navigator: SearchNavigatorType
@@ -15,13 +16,19 @@ struct SearchViewModel {
 
 extension SearchViewModel: ViewModelType {
     struct Input {
-
+        let loadTrigger: Driver<Void>
     }
     struct Output {
-
+        let listData: Driver<[String]>
     }
 
     func transform(input: Input, disposeBag: DisposeBag) -> Output {
-        return Output()
+        let currentListData = input.loadTrigger
+            .withLatestFrom(input.loadTrigger)
+            .flatMapLatest { _ in
+                return self.useCase.getDataTableView().asDriverOnErrorJustComplete()
+            }
+        
+        return Output(listData: currentListData)
     }
 }

@@ -24,6 +24,12 @@
 		DC54705C2910FD2B0027356F /* SearchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC54705B2910FD2B0027356F /* SearchUseCase.swift */; };
 		DC54705F291106F10027356F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC54705D291106F10027356F /* SearchViewController.swift */; };
 		DC547060291106F10027356F /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC54705E291106F10027356F /* SearchViewController.xib */; };
+		DCA8613829124591004A7991 /* GetListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8613729124591004A7991 /* GetListData.swift */; };
+		DCA8613B29124623004A7991 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8613A29124623004A7991 /* Repository.swift */; };
+		DCA8613E2912497A004A7991 /* SharedSequenceConvertibleType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8613D2912497A004A7991 /* SharedSequenceConvertibleType+Extension.swift */; };
+		DCA861402912498E004A7991 /* ObservableType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8613F2912498E004A7991 /* ObservableType+Extension.swift */; };
+		DCA8614229124D87004A7991 /* GateWayAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8614129124D87004A7991 /* GateWayAssembler.swift */; };
+		DCA861442912648B004A7991 /* SearchCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA861432912648B004A7991 /* SearchCellViewModel.swift */; };
 		DCD841BD2910EDEB007413C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD841BC2910EDEB007413C1 /* AppDelegate.swift */; };
 		DCD841C62910EDEC007413C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD841C52910EDEC007413C1 /* Assets.xcassets */; };
 		DCD841C92910EDEC007413C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD841C72910EDEC007413C1 /* LaunchScreen.storyboard */; };
@@ -49,6 +55,12 @@
 		DC54705B2910FD2B0027356F /* SearchUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUseCase.swift; sourceTree = "<group>"; };
 		DC54705D291106F10027356F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		DC54705E291106F10027356F /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		DCA8613729124591004A7991 /* GetListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetListData.swift; sourceTree = "<group>"; };
+		DCA8613A29124623004A7991 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		DCA8613D2912497A004A7991 /* SharedSequenceConvertibleType+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SharedSequenceConvertibleType+Extension.swift"; sourceTree = "<group>"; };
+		DCA8613F2912498E004A7991 /* ObservableType+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+Extension.swift"; sourceTree = "<group>"; };
+		DCA8614129124D87004A7991 /* GateWayAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GateWayAssembler.swift; sourceTree = "<group>"; };
+		DCA861432912648B004A7991 /* SearchCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCellViewModel.swift; sourceTree = "<group>"; };
 		DCD841B92910EDEB007413C1 /* DemoCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD841BC2910EDEB007413C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCD841C52910EDEC007413C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,6 +100,7 @@
 		DC5470312910F4180027356F /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				DCA86135291210BB004A7991 /* UseCases */,
 				DC5470322910F4210027356F /* Entities */,
 			);
 			path = Domain;
@@ -104,6 +117,7 @@
 		DC5470352910F5390027356F /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				DCA8613929124609004A7991 /* Repository */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -144,9 +158,9 @@
 				DC5470492910F91C0027356F /* SearchNavigator.swift */,
 				DC5470472910F90B0027356F /* SearchViewModel.swift */,
 				DC54705B2910FD2B0027356F /* SearchUseCase.swift */,
-				DC54704F2910F94C0027356F /* SearchTableViewCell */,
 				DC54705D291106F10027356F /* SearchViewController.swift */,
 				DC54705E291106F10027356F /* SearchViewController.xib */,
+				DC54704F2910F94C0027356F /* SearchTableViewCell */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -154,6 +168,7 @@
 		DC54704F2910F94C0027356F /* SearchTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				DCA861432912648B004A7991 /* SearchCellViewModel.swift */,
 				DC5470552910FBB10027356F /* TableViewCell.swift */,
 				DC5470562910FBB10027356F /* TableViewCell.xib */,
 			);
@@ -167,6 +182,40 @@
 				DC5470532910F9C30027356F /* ViewModelType.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		DCA86135291210BB004A7991 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				DCA861362912456E004A7991 /* Search */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		DCA861362912456E004A7991 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				DCA8613729124591004A7991 /* GetListData.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		DCA8613929124609004A7991 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				DCA8613A29124623004A7991 /* Repository.swift */,
+				DCA8614129124D87004A7991 /* GateWayAssembler.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		DCA8613C2912496A004A7991 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DCA8613D2912497A004A7991 /* SharedSequenceConvertibleType+Extension.swift */,
+				DCA8613F2912498E004A7991 /* ObservableType+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		DCD841B02910EDEB007413C1 = {
@@ -190,6 +239,7 @@
 		DCD841BB2910EDEB007413C1 /* DemoCA */ = {
 			isa = PBXGroup;
 			children = (
+				DCA8613C2912496A004A7991 /* Extensions */,
 				DC5470502910F9810027356F /* Common */,
 				DC5470372910F5A80027356F /* AppDelegate */,
 				DC5470362910F5460027356F /* Scenes */,
@@ -320,6 +370,7 @@
 			files = (
 				DC54705F291106F10027356F /* SearchViewController.swift in Sources */,
 				DC5470522910F9B80027356F /* Bindable.swift in Sources */,
+				DCA8613829124591004A7991 /* GetListData.swift in Sources */,
 				DC54705A2910FD180027356F /* SearchAssembler.swift in Sources */,
 				DC5470482910F90B0027356F /* SearchViewModel.swift in Sources */,
 				DC5470342910F43C0027356F /* GithubUser.swift in Sources */,
@@ -329,8 +380,13 @@
 				DC5470542910F9C30027356F /* ViewModelType.swift in Sources */,
 				DC5470402910F7320027356F /* AppNavigator.swift in Sources */,
 				DC54703E2910F7290027356F /* AppAssembler.swift in Sources */,
+				DCA8613B29124623004A7991 /* Repository.swift in Sources */,
+				DCA861442912648B004A7991 /* SearchCellViewModel.swift in Sources */,
+				DCA8613E2912497A004A7991 /* SharedSequenceConvertibleType+Extension.swift in Sources */,
 				DCD841BD2910EDEB007413C1 /* AppDelegate.swift in Sources */,
 				DC5470442910F74D0027356F /* AppUseCase.swift in Sources */,
+				DCA861402912498E004A7991 /* ObservableType+Extension.swift in Sources */,
+				DCA8614229124D87004A7991 /* GateWayAssembler.swift in Sources */,
 				DC54705C2910FD2B0027356F /* SearchUseCase.swift in Sources */,
 				DC5470392910F6CD0027356F /* Assembler.swift in Sources */,
 			);

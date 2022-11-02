@@ -36,6 +36,6 @@ extension SearchAssembler where Self: DefaultAssembler {
     }
 
     func resolve() -> SearchUseCaseType {
-        return SearchUseCase()
+        return SearchUseCase(repository: resolve())
     }
 }

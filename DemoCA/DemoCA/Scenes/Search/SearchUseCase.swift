@@ -6,11 +6,16 @@
 //
 
 import Foundation
+import RxSwift
 
 protocol SearchUseCaseType {
-    
+    func getDataTableView() -> Observable<[String]>
 }
 
-struct SearchUseCase: SearchUseCaseType {
+struct SearchUseCase: SearchUseCaseType, GetListsSearchData {
+    var repository: RepositoryType
     
+    func getDataTableView() -> Observable<[String]> {
+        return getData()
+    }
 }
