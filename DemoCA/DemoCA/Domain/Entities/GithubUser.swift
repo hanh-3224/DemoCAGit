@@ -15,3 +15,7 @@ struct GihubUser: Decodable {
 struct SearchReponse: Decodable {
     var items: [GihubUser]
 }
+
+class DataTableView: NSObject {
+    @objc dynamic var data = [String]()
+}

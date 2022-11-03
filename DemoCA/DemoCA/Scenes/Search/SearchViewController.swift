@@ -14,6 +14,7 @@ import Then
 final class SearchViewController: UIViewController {
     @IBOutlet private weak var searchTableView: UITableView!
     
+    private var dataTableView = DataTableView()
     private var disposeBag = DisposeBag()
     var viewModel: SearchViewModel!
     
@@ -39,6 +40,7 @@ extension SearchViewController: Bindable {
         let input = SearchViewModel.Input(loadTrigger: Driver.just(()))
         let output = viewModel.transform(input: input, disposeBag: disposeBag)
         output.listData.drive(searchTableView.rx.items) { tableview, index, text in
+            self.dataTableView.data.append(text)
             let indexPath = IndexPath(item: index, section: 0)
             let cell: TableViewCell = tableview.dequeueReusableCell(for: indexPath)
             cell.viewModel = SearchCellViewModel(searchText: text)
@@ -46,6 +48,20 @@ extension SearchViewController: Bindable {
             return cell
         }
         .disposed(by: disposeBag)
+        
+        dataTableView.rx.observe(\DataTableView.data)
+            .subscribe { data in
+                guard let data = data.element else { return }
+                print(data)
+            }
+            .disposed(by: disposeBag)
+
+        searchTableView.rx.observe(CFloat.self, #keyPath(UITableView.rowHeight))
+            .subscribe(onNext: { rowHeight in
+                guard let rowHeight = rowHeight else { return }
+                print("Row height is: \(rowHeight)")
+            })
+            .disposed(by: disposeBag)
     }
 }
 
