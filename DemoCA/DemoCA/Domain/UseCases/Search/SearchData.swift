@@ -8,12 +8,12 @@
 import UIKit
 import RxSwift
 
-protocol GetListsSearchData {
-    var repository: RepositoryType { get }
+protocol SearchData {
+    var dataGateWaytype: DataGateWayType { get }
 }
 
-extension GetListsSearchData {
+extension SearchData {
     func getData() -> Observable<[String]> {
-        return repository.getData()
+        return dataGateWaytype.getData()
     }
 }

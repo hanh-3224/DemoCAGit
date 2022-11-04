@@ -24,8 +24,9 @@
 		DC54705C2910FD2B0027356F /* SearchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC54705B2910FD2B0027356F /* SearchUseCase.swift */; };
 		DC54705F291106F10027356F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC54705D291106F10027356F /* SearchViewController.swift */; };
 		DC547060291106F10027356F /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC54705E291106F10027356F /* SearchViewController.xib */; };
-		DCA8613829124591004A7991 /* GetListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8613729124591004A7991 /* GetListData.swift */; };
-		DCA8613B29124623004A7991 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8613A29124623004A7991 /* Repository.swift */; };
+		DC9F4AB029150688008EC83C /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9F4AAF29150688008EC83C /* APIService.swift */; };
+		DCA8613829124591004A7991 /* SearchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8613729124591004A7991 /* SearchData.swift */; };
+		DCA8613B29124623004A7991 /* DataGateWayType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8613A29124623004A7991 /* DataGateWayType.swift */; };
 		DCA8613E2912497A004A7991 /* SharedSequenceConvertibleType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8613D2912497A004A7991 /* SharedSequenceConvertibleType+Extension.swift */; };
 		DCA861402912498E004A7991 /* ObservableType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8613F2912498E004A7991 /* ObservableType+Extension.swift */; };
 		DCA8614229124D87004A7991 /* GateWayAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8614129124D87004A7991 /* GateWayAssembler.swift */; };
@@ -55,8 +56,9 @@
 		DC54705B2910FD2B0027356F /* SearchUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUseCase.swift; sourceTree = "<group>"; };
 		DC54705D291106F10027356F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		DC54705E291106F10027356F /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
-		DCA8613729124591004A7991 /* GetListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetListData.swift; sourceTree = "<group>"; };
-		DCA8613A29124623004A7991 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		DC9F4AAF29150688008EC83C /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		DCA8613729124591004A7991 /* SearchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchData.swift; sourceTree = "<group>"; };
+		DCA8613A29124623004A7991 /* DataGateWayType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataGateWayType.swift; sourceTree = "<group>"; };
 		DCA8613D2912497A004A7991 /* SharedSequenceConvertibleType+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SharedSequenceConvertibleType+Extension.swift"; sourceTree = "<group>"; };
 		DCA8613F2912498E004A7991 /* ObservableType+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+Extension.swift"; sourceTree = "<group>"; };
 		DCA8614129124D87004A7991 /* GateWayAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GateWayAssembler.swift; sourceTree = "<group>"; };
@@ -117,7 +119,8 @@
 		DC5470352910F5390027356F /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				DCA8613929124609004A7991 /* Repository */,
+				DC9F4AAE2915066F008EC83C /* API */,
+				DCA8613929124609004A7991 /* GateWays */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -184,6 +187,14 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		DC9F4AAE2915066F008EC83C /* API */ = {
+			isa = PBXGroup;
+			children = (
+				DC9F4AAF29150688008EC83C /* APIService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		DCA86135291210BB004A7991 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,18 +206,18 @@
 		DCA861362912456E004A7991 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				DCA8613729124591004A7991 /* GetListData.swift */,
+				DCA8613729124591004A7991 /* SearchData.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
 		};
-		DCA8613929124609004A7991 /* Repository */ = {
+		DCA8613929124609004A7991 /* GateWays */ = {
 			isa = PBXGroup;
 			children = (
-				DCA8613A29124623004A7991 /* Repository.swift */,
+				DCA8613A29124623004A7991 /* DataGateWayType.swift */,
 				DCA8614129124D87004A7991 /* GateWayAssembler.swift */,
 			);
-			path = Repository;
+			path = GateWays;
 			sourceTree = "<group>";
 		};
 		DCA8613C2912496A004A7991 /* Extensions */ = {
@@ -370,8 +381,9 @@
 			files = (
 				DC54705F291106F10027356F /* SearchViewController.swift in Sources */,
 				DC5470522910F9B80027356F /* Bindable.swift in Sources */,
-				DCA8613829124591004A7991 /* GetListData.swift in Sources */,
+				DCA8613829124591004A7991 /* SearchData.swift in Sources */,
 				DC54705A2910FD180027356F /* SearchAssembler.swift in Sources */,
+				DC9F4AB029150688008EC83C /* APIService.swift in Sources */,
 				DC5470482910F90B0027356F /* SearchViewModel.swift in Sources */,
 				DC5470342910F43C0027356F /* GithubUser.swift in Sources */,
 				DC5470422910F73D0027356F /* AppViewModel.swift in Sources */,
@@ -380,7 +392,7 @@
 				DC5470542910F9C30027356F /* ViewModelType.swift in Sources */,
 				DC5470402910F7320027356F /* AppNavigator.swift in Sources */,
 				DC54703E2910F7290027356F /* AppAssembler.swift in Sources */,
-				DCA8613B29124623004A7991 /* Repository.swift in Sources */,
+				DCA8613B29124623004A7991 /* DataGateWayType.swift in Sources */,
 				DCA861442912648B004A7991 /* SearchCellViewModel.swift in Sources */,
 				DCA8613E2912497A004A7991 /* SharedSequenceConvertibleType+Extension.swift in Sources */,
 				DCD841BD2910EDEB007413C1 /* AppDelegate.swift in Sources */,

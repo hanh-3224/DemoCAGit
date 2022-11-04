@@ -8,11 +8,11 @@
 import Foundation
 
 protocol GatewayAssembler {
-    func resolve() -> RepositoryType
+    func resolve() -> DataGateWayType
 }
 
 extension GatewayAssembler where Self : DefaultAssembler {
-    func resolve() -> RepositoryType {
-        return Repository()
+    func resolve() -> DataGateWayType {
+        return DataGateWay()
     }
 }

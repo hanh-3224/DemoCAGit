@@ -27,6 +27,6 @@ extension AppViewModel: ViewModelType {
         input.loadTrigger
             .drive(onNext: self.navigator.toSearchVC)
             .disposed(by: disposeBag)
-        return Output()
+        return output
     }
 }

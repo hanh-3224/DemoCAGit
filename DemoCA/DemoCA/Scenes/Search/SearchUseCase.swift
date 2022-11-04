@@ -9,13 +9,13 @@ import Foundation
 import RxSwift
 
 protocol SearchUseCaseType {
-    func getDataTableView() -> Observable<[String]>
+    func getMockData() -> Observable<[String]>
 }
 
-struct SearchUseCase: SearchUseCaseType, GetListsSearchData {
-    var repository: RepositoryType
+struct SearchUseCase: SearchUseCaseType, SearchData {
+    var dataGateWaytype: DataGateWayType
     
-    func getDataTableView() -> Observable<[String]> {
+    func getMockData() -> Observable<[String]> {
         return getData()
     }
 }

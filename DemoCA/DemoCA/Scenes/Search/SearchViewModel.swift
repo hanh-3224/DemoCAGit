@@ -26,7 +26,7 @@ extension SearchViewModel: ViewModelType {
         let currentListData = input.loadTrigger
             .withLatestFrom(input.loadTrigger)
             .flatMapLatest { _ in
-                return self.useCase.getDataTableView().asDriverOnErrorJustComplete()
+                return self.useCase.getMockData().asDriverOnErrorJustComplete()
             }
         
         return Output(listData: currentListData)
