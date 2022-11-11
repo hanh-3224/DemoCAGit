@@ -7,13 +7,13 @@
 
 import Foundation
 
-struct GihubUser: Decodable {
+struct GithubUser: Decodable {
     var login: String
     var avatar_url: String
 }
 
 struct SearchReponse: Decodable {
-    var items: [GihubUser]
+    var items: [GithubUser]
 }
 
 class DataTableView: NSObject {

@@ -11,7 +11,7 @@ import RxCocoa
 import Reusable
 import Then
 
-final class SearchViewController: UIViewController {
+final class SearchViewController: UIViewController, ViewModelBased {
     @IBOutlet private weak var searchTableView: UITableView!
     
     private var dataTableView = DataTableView()
@@ -38,7 +38,7 @@ final class SearchViewController: UIViewController {
 extension SearchViewController: Bindable {
     func bindViewModel() {
         let input = SearchViewModel.Input(loadTrigger: Driver.just(()))
-        let output = viewModel.transform(input: input, disposeBag: disposeBag)
+        let output = viewModel.transform(input, disposeBag: disposeBag)
         output.listData.drive(searchTableView.rx.items) { tableview, index, text in
             self.dataTableView.data.append(text)
             let indexPath = IndexPath(item: index, section: 0)
@@ -67,6 +67,7 @@ extension SearchViewController: Bindable {
 
 extension SearchViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Row at \(indexPath.row)")
         tableView.deselectRow(at: indexPath, animated: false)
     }
 }

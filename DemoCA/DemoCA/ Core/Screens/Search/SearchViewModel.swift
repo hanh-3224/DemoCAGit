@@ -8,13 +8,12 @@
 import Foundation
 import RxSwift
 import RxCocoa
+import RxFlow
 
-struct SearchViewModel {
-    let navigator: SearchNavigatorType
-    let useCase: SearchUseCaseType
-}
-
-extension SearchViewModel: ViewModelType {
+struct SearchViewModel: SceneUseCaseViewModel {    
+    var sceneUseCase: SearchUseCaseType!
+    var steps = PublishRelay<Step>()
+    
     struct Input {
         let loadTrigger: Driver<Void>
     }
@@ -22,11 +21,11 @@ extension SearchViewModel: ViewModelType {
         let listData: Driver<[String]>
     }
 
-    func transform(input: Input, disposeBag: DisposeBag) -> Output {
+    func transform(_ input: Input, disposeBag: DisposeBag) -> Output {
         let currentListData = input.loadTrigger
             .withLatestFrom(input.loadTrigger)
             .flatMapLatest { _ in
-                return self.useCase.getMockData().asDriverOnErrorJustComplete()
+                return self.sceneUseCase.getMockData().asDriverOnErrorJustComplete()
             }
         
         return Output(listData: currentListData)

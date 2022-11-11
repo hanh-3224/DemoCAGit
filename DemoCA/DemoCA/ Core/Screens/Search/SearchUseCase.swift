@@ -12,10 +12,9 @@ protocol SearchUseCaseType {
     func getMockData() -> Observable<[String]>
 }
 
-struct SearchUseCase: SearchUseCaseType, SearchData {
-    var dataGateWaytype: DataGateWayType
+struct SearchUseCase: SearchUseCaseType {
     
     func getMockData() -> Observable<[String]> {
-        return getData()
+        return APIRepository.shared.getListSearchData()
     }
 }

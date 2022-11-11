@@ -9,31 +9,26 @@
 /* Begin PBXBuildFile section */
 		69F75A64B28525762B033BB1 /* Pods_DemoCA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B00351DA120BD1B05FC93D2 /* Pods_DemoCA.framework */; };
 		DC5470342910F43C0027356F /* GithubUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5470332910F43C0027356F /* GithubUser.swift */; };
-		DC5470392910F6CD0027356F /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5470382910F6CD0027356F /* Assembler.swift */; };
-		DC54703E2910F7290027356F /* AppAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC54703D2910F7290027356F /* AppAssembler.swift */; };
-		DC5470402910F7320027356F /* AppNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC54703F2910F7320027356F /* AppNavigator.swift */; };
 		DC5470422910F73D0027356F /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5470412910F73D0027356F /* AppViewModel.swift */; };
 		DC5470442910F74D0027356F /* AppUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5470432910F74D0027356F /* AppUseCase.swift */; };
 		DC5470482910F90B0027356F /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5470472910F90B0027356F /* SearchViewModel.swift */; };
-		DC54704A2910F91C0027356F /* SearchNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5470492910F91C0027356F /* SearchNavigator.swift */; };
 		DC5470522910F9B80027356F /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5470512910F9B80027356F /* Bindable.swift */; };
 		DC5470542910F9C30027356F /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5470532910F9C30027356F /* ViewModelType.swift */; };
 		DC5470572910FBB10027356F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5470552910FBB10027356F /* TableViewCell.swift */; };
 		DC5470582910FBB10027356F /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC5470562910FBB10027356F /* TableViewCell.xib */; };
-		DC54705A2910FD180027356F /* SearchAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5470592910FD180027356F /* SearchAssembler.swift */; };
 		DC54705C2910FD2B0027356F /* SearchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC54705B2910FD2B0027356F /* SearchUseCase.swift */; };
 		DC54705F291106F10027356F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC54705D291106F10027356F /* SearchViewController.swift */; };
 		DC547060291106F10027356F /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC54705E291106F10027356F /* SearchViewController.xib */; };
+		DC8E12082924BC1200767AE6 /* SearchFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8E12072924BC1200767AE6 /* SearchFlow.swift */; };
 		DC9F4AB029150688008EC83C /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9F4AAF29150688008EC83C /* APIService.swift */; };
-		DCA8613829124591004A7991 /* SearchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8613729124591004A7991 /* SearchData.swift */; };
-		DCA8613B29124623004A7991 /* DataGateWayType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8613A29124623004A7991 /* DataGateWayType.swift */; };
 		DCA8613E2912497A004A7991 /* SharedSequenceConvertibleType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8613D2912497A004A7991 /* SharedSequenceConvertibleType+Extension.swift */; };
 		DCA861402912498E004A7991 /* ObservableType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8613F2912498E004A7991 /* ObservableType+Extension.swift */; };
-		DCA8614229124D87004A7991 /* GateWayAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8614129124D87004A7991 /* GateWayAssembler.swift */; };
 		DCA861442912648B004A7991 /* SearchCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA861432912648B004A7991 /* SearchCellViewModel.swift */; };
 		DCD841BD2910EDEB007413C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD841BC2910EDEB007413C1 /* AppDelegate.swift */; };
 		DCD841C62910EDEC007413C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD841C52910EDEC007413C1 /* Assets.xcassets */; };
 		DCD841C92910EDEC007413C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD841C72910EDEC007413C1 /* LaunchScreen.storyboard */; };
+		DCEB30DF291CA73600BEC3C8 /* Steps.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEB30DE291CA73600BEC3C8 /* Steps.swift */; };
+		DCEB30E1291CA84900BEC3C8 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEB30E0291CA84900BEC3C8 /* AppFlow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,33 +36,28 @@
 		8B00351DA120BD1B05FC93D2 /* Pods_DemoCA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoCA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D121E50BA2BC7A85711D9E0 /* Pods-DemoCA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCA.debug.xcconfig"; path = "Target Support Files/Pods-DemoCA/Pods-DemoCA.debug.xcconfig"; sourceTree = "<group>"; };
 		DC5470332910F43C0027356F /* GithubUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUser.swift; sourceTree = "<group>"; };
-		DC5470382910F6CD0027356F /* Assembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembler.swift; sourceTree = "<group>"; };
-		DC54703D2910F7290027356F /* AppAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembler.swift; sourceTree = "<group>"; };
-		DC54703F2910F7320027356F /* AppNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigator.swift; sourceTree = "<group>"; };
 		DC5470412910F73D0027356F /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
 		DC5470432910F74D0027356F /* AppUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUseCase.swift; sourceTree = "<group>"; };
 		DC5470472910F90B0027356F /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
-		DC5470492910F91C0027356F /* SearchNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNavigator.swift; sourceTree = "<group>"; };
 		DC5470512910F9B80027356F /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
 		DC5470532910F9C30027356F /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		DC5470552910FBB10027356F /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		DC5470562910FBB10027356F /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
-		DC5470592910FD180027356F /* SearchAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAssembler.swift; sourceTree = "<group>"; };
 		DC54705B2910FD2B0027356F /* SearchUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUseCase.swift; sourceTree = "<group>"; };
 		DC54705D291106F10027356F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		DC54705E291106F10027356F /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		DC8E12072924BC1200767AE6 /* SearchFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlow.swift; sourceTree = "<group>"; };
 		DC9F4AAF29150688008EC83C /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
-		DCA8613729124591004A7991 /* SearchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchData.swift; sourceTree = "<group>"; };
-		DCA8613A29124623004A7991 /* DataGateWayType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataGateWayType.swift; sourceTree = "<group>"; };
 		DCA8613D2912497A004A7991 /* SharedSequenceConvertibleType+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SharedSequenceConvertibleType+Extension.swift"; sourceTree = "<group>"; };
 		DCA8613F2912498E004A7991 /* ObservableType+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+Extension.swift"; sourceTree = "<group>"; };
-		DCA8614129124D87004A7991 /* GateWayAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GateWayAssembler.swift; sourceTree = "<group>"; };
 		DCA861432912648B004A7991 /* SearchCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCellViewModel.swift; sourceTree = "<group>"; };
 		DCD841B92910EDEB007413C1 /* DemoCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD841BC2910EDEB007413C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCD841C52910EDEC007413C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCD841C82910EDEC007413C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCD841CA2910EDEC007413C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCEB30DE291CA73600BEC3C8 /* Steps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Steps.swift; sourceTree = "<group>"; };
+		DCEB30E0291CA84900BEC3C8 /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +92,6 @@
 		DC5470312910F4180027356F /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				DCA86135291210BB004A7991 /* UseCases */,
 				DC5470322910F4210027356F /* Entities */,
 			);
 			path = Domain;
@@ -120,34 +109,24 @@
 			isa = PBXGroup;
 			children = (
 				DC9F4AAE2915066F008EC83C /* API */,
-				DCA8613929124609004A7991 /* GateWays */,
 			);
 			path = Data;
 			sourceTree = "<group>";
 		};
-		DC5470362910F5460027356F /* Scenes */ = {
+		DC5470362910F5460027356F /*  Core */ = {
 			isa = PBXGroup;
 			children = (
-				DC54703C2910F70C0027356F /* Search */,
+				DCEB30DB291CA22D00BEC3C8 /* Flows */,
 				DC54703A2910F6F50027356F /* App */,
+				DCEB30DC291CA24B00BEC3C8 /* Screens */,
 			);
-			path = Scenes;
-			sourceTree = "<group>";
-		};
-		DC5470372910F5A80027356F /* AppDelegate */ = {
-			isa = PBXGroup;
-			children = (
-				DCD841BC2910EDEB007413C1 /* AppDelegate.swift */,
-				DC5470382910F6CD0027356F /* Assembler.swift */,
-			);
-			path = AppDelegate;
+			path = " Core";
 			sourceTree = "<group>";
 		};
 		DC54703A2910F6F50027356F /* App */ = {
 			isa = PBXGroup;
 			children = (
-				DC54703D2910F7290027356F /* AppAssembler.swift */,
-				DC54703F2910F7320027356F /* AppNavigator.swift */,
+				DCD841BC2910EDEB007413C1 /* AppDelegate.swift */,
 				DC5470412910F73D0027356F /* AppViewModel.swift */,
 				DC5470432910F74D0027356F /* AppUseCase.swift */,
 			);
@@ -157,8 +136,6 @@
 		DC54703C2910F70C0027356F /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				DC5470592910FD180027356F /* SearchAssembler.swift */,
-				DC5470492910F91C0027356F /* SearchNavigator.swift */,
 				DC5470472910F90B0027356F /* SearchViewModel.swift */,
 				DC54705B2910FD2B0027356F /* SearchUseCase.swift */,
 				DC54705D291106F10027356F /* SearchViewController.swift */,
@@ -195,31 +172,6 @@
 			path = API;
 			sourceTree = "<group>";
 		};
-		DCA86135291210BB004A7991 /* UseCases */ = {
-			isa = PBXGroup;
-			children = (
-				DCA861362912456E004A7991 /* Search */,
-			);
-			path = UseCases;
-			sourceTree = "<group>";
-		};
-		DCA861362912456E004A7991 /* Search */ = {
-			isa = PBXGroup;
-			children = (
-				DCA8613729124591004A7991 /* SearchData.swift */,
-			);
-			path = Search;
-			sourceTree = "<group>";
-		};
-		DCA8613929124609004A7991 /* GateWays */ = {
-			isa = PBXGroup;
-			children = (
-				DCA8613A29124623004A7991 /* DataGateWayType.swift */,
-				DCA8614129124D87004A7991 /* GateWayAssembler.swift */,
-			);
-			path = GateWays;
-			sourceTree = "<group>";
-		};
 		DCA8613C2912496A004A7991 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,8 +204,7 @@
 			children = (
 				DCA8613C2912496A004A7991 /* Extensions */,
 				DC5470502910F9810027356F /* Common */,
-				DC5470372910F5A80027356F /* AppDelegate */,
-				DC5470362910F5460027356F /* Scenes */,
+				DC5470362910F5460027356F /*  Core */,
 				DC5470352910F5390027356F /* Data */,
 				DC5470312910F4180027356F /* Domain */,
 				DCD841C52910EDEC007413C1 /* Assets.xcassets */,
@@ -261,6 +212,24 @@
 				DCD841CA2910EDEC007413C1 /* Info.plist */,
 			);
 			path = DemoCA;
+			sourceTree = "<group>";
+		};
+		DCEB30DB291CA22D00BEC3C8 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				DCEB30DE291CA73600BEC3C8 /* Steps.swift */,
+				DCEB30E0291CA84900BEC3C8 /* AppFlow.swift */,
+				DC8E12072924BC1200767AE6 /* SearchFlow.swift */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		DCEB30DC291CA24B00BEC3C8 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				DC54703C2910F70C0027356F /* Search */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,27 +349,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC54705F291106F10027356F /* SearchViewController.swift in Sources */,
+				DCEB30E1291CA84900BEC3C8 /* AppFlow.swift in Sources */,
 				DC5470522910F9B80027356F /* Bindable.swift in Sources */,
-				DCA8613829124591004A7991 /* SearchData.swift in Sources */,
-				DC54705A2910FD180027356F /* SearchAssembler.swift in Sources */,
 				DC9F4AB029150688008EC83C /* APIService.swift in Sources */,
 				DC5470482910F90B0027356F /* SearchViewModel.swift in Sources */,
 				DC5470342910F43C0027356F /* GithubUser.swift in Sources */,
+				DC8E12082924BC1200767AE6 /* SearchFlow.swift in Sources */,
 				DC5470422910F73D0027356F /* AppViewModel.swift in Sources */,
-				DC54704A2910F91C0027356F /* SearchNavigator.swift in Sources */,
+				DCEB30DF291CA73600BEC3C8 /* Steps.swift in Sources */,
 				DC5470572910FBB10027356F /* TableViewCell.swift in Sources */,
 				DC5470542910F9C30027356F /* ViewModelType.swift in Sources */,
-				DC5470402910F7320027356F /* AppNavigator.swift in Sources */,
-				DC54703E2910F7290027356F /* AppAssembler.swift in Sources */,
-				DCA8613B29124623004A7991 /* DataGateWayType.swift in Sources */,
 				DCA861442912648B004A7991 /* SearchCellViewModel.swift in Sources */,
 				DCA8613E2912497A004A7991 /* SharedSequenceConvertibleType+Extension.swift in Sources */,
 				DCD841BD2910EDEB007413C1 /* AppDelegate.swift in Sources */,
 				DC5470442910F74D0027356F /* AppUseCase.swift in Sources */,
 				DCA861402912498E004A7991 /* ObservableType+Extension.swift in Sources */,
-				DCA8614229124D87004A7991 /* GateWayAssembler.swift in Sources */,
 				DC54705C2910FD2B0027356F /* SearchUseCase.swift in Sources */,
-				DC5470392910F6CD0027356F /* Assembler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

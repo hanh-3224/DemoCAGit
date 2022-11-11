@@ -8,6 +8,9 @@ PODS:
   - RxCocoa (6.5.0):
     - RxRelay (= 6.5.0)
     - RxSwift (= 6.5.0)
+  - RxFlow (2.13.0):
+    - RxCocoa (>= 6.0.0)
+    - RxSwift (>= 6.0.0)
   - RxRelay (6.5.0):
     - RxSwift (= 6.5.0)
   - RxSwift (6.5.0)
@@ -17,6 +20,7 @@ DEPENDENCIES:
   - Alamofire
   - Reusable
   - RxCocoa
+  - RxFlow
   - RxSwift
   - Then
 
@@ -25,6 +29,7 @@ SPEC REPOS:
     - Alamofire
     - Reusable
     - RxCocoa
+    - RxFlow
     - RxRelay
     - RxSwift
     - Then
@@ -33,10 +38,11 @@ SPEC CHECKSUMS:
   Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
   Reusable: 6bae6a5e8aa793c9c441db0213c863a64bce9136
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxFlow: 52f6f6379918392c1ea8cb62d8dcf2df9a5463dd
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
 
-PODFILE CHECKSUM: 2c66e68d89b38eea7f327cd6daaf9a48f4ad1fb1
+PODFILE CHECKSUM: 8de9a5d590ca846e8cced4e26a22ec7221123b08
 
 COCOAPODS: 1.11.3
