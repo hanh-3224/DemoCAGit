@@ -14,8 +14,8 @@
 		DC5470482910F90B0027356F /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5470472910F90B0027356F /* SearchViewModel.swift */; };
 		DC5470522910F9B80027356F /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5470512910F9B80027356F /* Bindable.swift */; };
 		DC5470542910F9C30027356F /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5470532910F9C30027356F /* ViewModelType.swift */; };
-		DC5470572910FBB10027356F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5470552910FBB10027356F /* TableViewCell.swift */; };
-		DC5470582910FBB10027356F /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC5470562910FBB10027356F /* TableViewCell.xib */; };
+		DC5470572910FBB10027356F /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5470552910FBB10027356F /* SearchCell.swift */; };
+		DC5470582910FBB10027356F /* SearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC5470562910FBB10027356F /* SearchCell.xib */; };
 		DC54705C2910FD2B0027356F /* SearchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC54705B2910FD2B0027356F /* SearchUseCase.swift */; };
 		DC54705F291106F10027356F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC54705D291106F10027356F /* SearchViewController.swift */; };
 		DC547060291106F10027356F /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC54705E291106F10027356F /* SearchViewController.xib */; };
@@ -41,8 +41,8 @@
 		DC5470472910F90B0027356F /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		DC5470512910F9B80027356F /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
 		DC5470532910F9C30027356F /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
-		DC5470552910FBB10027356F /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		DC5470562910FBB10027356F /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		DC5470552910FBB10027356F /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		DC5470562910FBB10027356F /* SearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCell.xib; sourceTree = "<group>"; };
 		DC54705B2910FD2B0027356F /* SearchUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUseCase.swift; sourceTree = "<group>"; };
 		DC54705D291106F10027356F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		DC54705E291106F10027356F /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
@@ -149,8 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				DCA861432912648B004A7991 /* SearchCellViewModel.swift */,
-				DC5470552910FBB10027356F /* TableViewCell.swift */,
-				DC5470562910FBB10027356F /* TableViewCell.xib */,
+				DC5470552910FBB10027356F /* SearchCell.swift */,
+				DC5470562910FBB10027356F /* SearchCell.xib */,
 			);
 			path = SearchTableViewCell;
 			sourceTree = "<group>";
@@ -293,7 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCD841C92910EDEC007413C1 /* LaunchScreen.storyboard in Resources */,
-				DC5470582910FBB10027356F /* TableViewCell.xib in Resources */,
+				DC5470582910FBB10027356F /* SearchCell.xib in Resources */,
 				DC547060291106F10027356F /* SearchViewController.xib in Resources */,
 				DCD841C62910EDEC007413C1 /* Assets.xcassets in Resources */,
 			);
@@ -357,7 +357,7 @@
 				DC8E12082924BC1200767AE6 /* SearchFlow.swift in Sources */,
 				DC5470422910F73D0027356F /* AppViewModel.swift in Sources */,
 				DCEB30DF291CA73600BEC3C8 /* Steps.swift in Sources */,
-				DC5470572910FBB10027356F /* TableViewCell.swift in Sources */,
+				DC5470572910FBB10027356F /* SearchCell.swift in Sources */,
 				DC5470542910F9C30027356F /* ViewModelType.swift in Sources */,
 				DCA861442912648B004A7991 /* SearchCellViewModel.swift in Sources */,
 				DCA8613E2912497A004A7991 /* SharedSequenceConvertibleType+Extension.swift in Sources */,

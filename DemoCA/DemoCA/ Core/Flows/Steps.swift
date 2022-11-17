@@ -11,5 +11,4 @@ import RxFlow
 enum Steps: Step {
     case tabbarRequired
     case searchRequired
-    case searchCellPickedRequired
 }

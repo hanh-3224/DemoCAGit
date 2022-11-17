@@ -29,7 +29,7 @@ final class SearchViewController: UIViewController, ViewModelBased {
         searchTableView.do {
             $0.rowHeight = 80
             $0.delegate = self
-            $0.register(cellType: TableViewCell.self)
+            $0.register(cellType: SearchCell.self)
             $0.separatorStyle = .none
         }
     }
@@ -42,26 +42,13 @@ extension SearchViewController: Bindable {
         output.listData.drive(searchTableView.rx.items) { tableview, index, text in
             self.dataTableView.data.append(text)
             let indexPath = IndexPath(item: index, section: 0)
-            let cell: TableViewCell = tableview.dequeueReusableCell(for: indexPath)
+            let cell: SearchCell = tableview.dequeueReusableCell(for: indexPath)
             cell.viewModel = SearchCellViewModel(searchText: text)
             cell.setDataCell()
             return cell
         }
         .disposed(by: disposeBag)
         
-        dataTableView.rx.observe(\DataTableView.data)
-            .subscribe { data in
-                guard let data = data.element else { return }
-                print(data)
-            }
-            .disposed(by: disposeBag)
-
-        searchTableView.rx.observe(CFloat.self, #keyPath(UITableView.rowHeight))
-            .subscribe(onNext: { rowHeight in
-                guard let rowHeight = rowHeight else { return }
-                print("Row height is: \(rowHeight)")
-            })
-            .disposed(by: disposeBag)
     }
 }
 

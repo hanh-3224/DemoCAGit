@@ -9,7 +9,7 @@ import UIKit
 import Reusable
 import RxSwift
 
-class TableViewCell: UITableViewCell, NibReusable {
+class SearchCell: UITableViewCell, NibReusable {
 
     @IBOutlet private weak var searchLable: UILabel!
 

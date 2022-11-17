@@ -23,7 +23,6 @@ struct SearchViewModel: SceneUseCaseViewModel {
 
     func transform(_ input: Input, disposeBag: DisposeBag) -> Output {
         let currentListData = input.loadTrigger
-            .withLatestFrom(input.loadTrigger)
             .flatMapLatest { _ in
                 return self.sceneUseCase.getMockData().asDriverOnErrorJustComplete()
             }
